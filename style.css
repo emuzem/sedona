@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body {
+    max-width: 1200px;
+    background-color: #f2f2f2;
+    margin: auto;
+    overflow-x: hidden;
+}
+img {
+    width: auto;
+}
+header{
+    width: auto;
+    background-color: white;
+}
+
+.PT-sans-normal{
+    color: #000000;
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.PT-sans-another{
+    color: #333333;
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-container{
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+#logo-img{
+    align-self: flex-start;
+}
+.intro-container{
+    background-image: url("img/background_photo.png");
+    height: auto;
+    width: auto;
+}
+.inTheLines:before, .inTheLines:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 30px;
+    height: 2.5px;
+    background: #766357;
+    border: solid #766357;
+    border-width: 0 15px;
+    margin: 0 15px 20px 15px;
+}
+.inTheLines:before{
+    margin-left: -100%;
+}
+.inTheLines:after{
+    margin-right: -100%;
+}
+.intro-container{
+    text-align: center;
+}
+#welcome{
+    padding: 110px 0 15px 0;
+}
+#sedona{
+    padding: 60px 0 55px 0;
+}
+.img-block img{
+    display: block;
+}
+.intro-text{
+    height: 216px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.intro-wrapper{
+    max-width: 510px;
+    margin: auto;
+}
+.text-white-h{
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text-white-t{
+    font-family: "PT Sans Regular 400";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #c5dcea;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.information{
+    display: grid;
+    grid-template-areas: "first second second" "card1w card2w card3w"
+    "bridge bridge cardBlue"
+    "gray1 gray2 gray3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.f {
+    background-color: #81b3d2;
+    grid-area: first;
+}
+.flex-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper {
+    max-width: 300px;
+    text-align: center;
+    margin: auto;
+}
+.nOne{
+    padding: 35px 0;
+}
+.d {
+    grid-area: second;
+}
+.card1w{
+    grid-area: card1w;
+}
+.card2w{
+    grid-area: card2w;
+}
+.card3w{
+    grid-area: card3w;
+}
+.white-card{
+    background-color: white;
+}
+.middleCardText{
+    padding: 20px 0;
+}
+#bridge_img{
+    grid-area: bridge;
+}
+.cardBlue2{
+    grid-area: cardBlue;
+    background-color: #81b3d2;
+}
+#gray1{
+    grid-area: gray1;
+}
+#gray2{
+    grid-area: gray2;
+}
+#gray3{
+    grid-area: gray3;
+}
+.grayCard{
+    background-color: #eeeeee;
+    height: 250px;
+}
+.search{
+    text-align: center;
+    background-color: white;
+}
+.search-wrapper{
+    width: 470px;
+    margin: auto;
+}
+#searchHotel{
+    width: 568px;
+    height: 86px;
+    background-color: #766357;
+    border: none;
+    font-weight: 700;
+}
+.PT-sans-big{
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+}
+.map{
+    background: url("img/map.png");
+    width: auto;
+    height: 470px;
+}
+
