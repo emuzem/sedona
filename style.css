@@ -335,16 +335,19 @@ footer{
         max-width: 100%;
         width: 100%;
     }
-    body div{
-        padding: 0 5px;
-    }
     .logo_flex{
         display: flex;
         flex-direction: column;
     }
     .socialContainer{
-        height: 28px;
-        width: 28px;
+        height: 31px;
+        width: 31px;
+    }
+    #sedona img{
+        width: 90%
+    }
+    .img-block img{
+        width: 100%;
     }
 }
 .PT-sans-normal{
