@@ -206,3 +206,69 @@ header{
     height: 470px;
 }
 
+footer{
+    height: 120px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 125px;
+}
+.logo_flex{
+    display: flex;
+    align-items: center;
+}
+.logo_flex div {
+    padding: 0 5px;
+}
+.socialContainer{
+    background-color: #81b3d2;
+    margin: 3px;
+    width: 46px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social{
+    display: flex;
+}
+.modal{
+    width: 468px;
+    height: 325px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 1px 1px 8px 1px gray;
+    padding: 40px 50px;
+}
+.field{
+    margin: auto;
+    padding: 15px 0;
+}
+.field input {
+    width: 348px;
+    height: 38px;
+}
+.field div{
+    display: inline-block;
+}
+.value, .minus, .plus{
+    height: 38px;
+    width: 38px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.counterWrapper {
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+
+}
+.buttonCounter{
+   display: flex;
+    padding: 0 30px;
+}
