@@ -235,40 +235,86 @@ footer{
 }
 .modal{
     width: 468px;
-    height: 325px;
+    height: 310px;
     background-color: white;
     margin: auto;
     box-shadow: 1px 1px 8px 1px gray;
-    padding: 40px 50px;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-areas:
+    "date1Text date1Input date1Input date1Input"
+    "date2Text date2Input date2Input date2Input"
+    "adult counter1 children counter2"
+    "find find find find";
+    grid-template-rows: 38px 38px 38px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px 0;
 }
-.field{
-    margin: auto;
-    padding: 15px 0;
+.modal div{
+    display: flex;
+    align-items: center;
 }
-.field input {
-    width: 348px;
-    height: 38px;
+.date1Text{
+    grid-area: date1Text;
+
 }
-.field div{
-    display: inline-block;
+.date1Input{
+    grid-area: date1Input;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 0 15px;
 }
-.value, .minus, .plus{
-    height: 38px;
+.date2Text{
+    grid-area: date2Text;
+}
+.date2Input{
+    grid-area: date2Input;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 0 15px;
+}
+.adult{
+    grid-area: adult;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.counter1{
+    grid-area: counter1;
+    display: flex;
+}
+.children{
+    grid-area: children;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    align-items: baseline;
+
+}
+.counter2{
+    grid-area: counter2;
+    display: flex;
+}
+.counter1 div, .counter2 div{
     width: 38px;
+    height: 38px;
     background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.find{
+    grid-area: find;
+    top: 30px;
+}
+.findHotel{
+    height: 58px;
+    background-color: #81b3d2;
     border: none;
+    width: 467px;
 }
-.counterWrapper {
-    display: flex;
-    justify-content: center;
-
-    margin: auto;
-
-}
-.buttonCounter{
-   display: flex;
-    padding: 0 30px;
+.findHotel:focus{
+    border: none;
 }
