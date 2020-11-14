@@ -331,7 +331,21 @@ footer{
     }
 }
 @media screen and (max-width: 500px) {
-
+    body{
+        max-width: 100%;
+        width: 100%;
+    }
+    body div{
+        padding: 0 5px;
+    }
+    .logo_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .socialContainer{
+        height: 28px;
+        width: 28px;
+    }
 }
 .PT-sans-normal{
     color: #000000;
