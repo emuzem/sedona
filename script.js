@@ -39,10 +39,10 @@ function plusMinusValue (plus, minus, value, valueNumber){
     minus.addEventListener('click', () => {
         counter --;
         if(counter < 0){
-            value.innerHTML = `0`;
-        } else {
-            value.innerHTML = `${counter}`;
+            counter++;
         }
+            value.innerHTML = `${counter}`;
+
     })
 }
 plusMinusValue(p1, m1, v1, 2);

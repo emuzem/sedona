@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="cssworld.ru-xcal.css" />
     <title>S E D A N A</title>
 </head>
 <body>
@@ -20,14 +21,14 @@
             <div class="menu-image"><img src="img/menu2.jpg"></div>
         </div>
         <div class="mainImg"><img src="img/logo.png"></div>
+        <div class="showHide PT-sans-normal">
+            <div class="menuItem"><a href="#">ИНФОРМАЦИЯ</a></div>
+            <div class="menuItem>"><a href="#">ФОТО И ВИДЕО</a></div>
+            <div class="menuItem>"><a href="#">КАРТА ШТАТА</a></div>
+            <div class="menuItem>"><a href="#">ГОСТИНИЦЫ</a></div>
+        </div>
     </div>
 </header>
-<div class="showHide PT-sans-normal">
-    <div class="menuItem"><a href="#">ИНФОРМАЦИЯ</a></div>
-    <div class="menuItem>"><a href="#">ФОТО И ВИДЕО</a></div>
-    <div class="menuItem>"><a href="#">КАРТА ШТАТА</a></div>
-    <div class="menuItem>"><a href="#">ГОСТИНИЦЫ</a></div>
-</div>
 <section>
     <div class="intro-container">
             <div id="welcome"><img src="img/Welcome.png" alt="Welcome"></div>
@@ -123,9 +124,9 @@
 <section class="map">
     <div class="modal PT-sans-normal">
         <div class="date1Text">Дата заезда:</div>
-        <div class="date1Input"><div>24 Апреля 2017</div><div> <img src="img/calendar.png"></div> </div>
+        <div class="date1Input PT-sans-normal"><input type="date" value="2017-04-24"> </div>
         <div class="date2Text">Дата Выезда:</div>
-        <div class="date2Input"><div>4 июля 2017</div><div><img src="img/calendar.png"></div></div>
+        <div class="date2Input PT-sans-normal"><input type="date" value="2017-07-04"></div>
         <div class="adult">ВзрослыЕ:</div>
         <div class="counter1">
             <div class="minus m1"><img src="img/minus.png"></div>
@@ -161,5 +162,7 @@
     </div>
 </footer>
 <script src="script.js"></script>
+<script type="text/javascript" src="cssworld.ru-xcal.js"></script>
+<script>xCal.all("datepicker");</script>
 </body>
 </html>

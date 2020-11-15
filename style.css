@@ -225,7 +225,24 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
+}
+.date1Input input, .date2Input input {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
     padding: 0 15px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+    text-transform: uppercase;
 }
 .date2Text{
     grid-area: date2Text;
@@ -235,7 +252,6 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
-    padding: 0 15px;
 }
 .adult{
     grid-area: adult;
@@ -336,12 +352,7 @@ footer{
     }
 }
 @media screen and (max-width: 500px) {
-    .menuModal{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        filter: brightness(40%);
-    }
+
     .header-container{
         display: none;
     }
@@ -362,10 +373,10 @@ footer{
         width: 100%;
         height: 30%;
         position: absolute;
-        top: 58px;
+        top: 55px;
         left: 0;
-        background-color: #dceaf3;
-        filter: opacity(75%);
+        background-color: white;
+        filter: blur(10%);
         display: none;
         flex-direction: column;
         padding-top: 10px;
@@ -390,8 +401,9 @@ footer{
         flex-direction: column;
     }
     .socialContainer{
-        height: 31px;
-        width: 31px;
+        height: 36px;
+        width: 36px;
+        border-radius: 5px;
     }
     #sedona img{
         width: 90%
