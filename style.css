@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
 html{
     overflow-x: hidden;
 }
 body {
-    max-width: 1200px;
-    background-color: #f2f2f2;
-    margin: auto;
     overflow-x: hidden;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f2f2f2;
 }
+
+/*HEADER*/
+
 header{
     width: auto;
     background-color: white;
 }
 
 .header-container{
-    display: flex;
     height: 50px;
+    /*font*/
+    font-size: 14px;
+    /*flex*/
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 14px;
 }
 .header-container a{
     color: #000000;
@@ -29,6 +33,12 @@ header{
 .header-container a:hover{
     color: #000000;
 }
+.hamburger-menu{
+    display: none;
+}
+
+/*INTRO*/
+
 #logo-img{
     align-self: flex-start;
 }
@@ -36,8 +46,6 @@ header{
     background-image: url("img/background_photo.png");
     height: auto;
     width: auto;
-}
-.intro-container{
     text-align: center;
 }
 #welcome{
@@ -53,6 +61,7 @@ header{
 .intro-text{
     height: 216px;
     background-color: white;
+    /*flex*/
     display: flex;
     align-items: center;
 }
@@ -60,6 +69,20 @@ header{
     max-width: 510px;
     margin: auto;
 }
+.flex-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper {
+    text-align: center;
+    margin: auto;
+}
+.nOne{
+    padding: 35px 0;
+}
+
+/*GRID CARD BLOCK*/
 
 .information{
     display: grid;
@@ -73,18 +96,6 @@ header{
     background-color: #81b3d2;
     grid-area: first;
     padding: 20px;
-}
-.flex-middle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.wrapper {
-    text-align: center;
-    margin: auto;
-}
-.nOne{
-    padding: 35px 0;
 }
 .d {
     grid-area: second;
@@ -106,18 +117,18 @@ header{
     background-color: white;
     padding: 30px 30px;
 }
-.middleCardText{
+.middle-card-text{
     padding: 20px 0;
 }
-#bridge_img{
+#bridge-img{
     grid-area: bridge;
 }
-#bridge_img img{
+#bridge-img img{
     width: 100%;
     height: 100%;
     display: block;
 }
-.cardBlue2{
+.card-blue-2{
     grid-area: cardBlue;
     background-color: #81b3d2;
     padding: 20px;
@@ -131,17 +142,20 @@ header{
 #gray3{
     grid-area: gray3;
 }
-.grayCard{
+.gray-card{
     background-color: #eeeeee;
     height: 250px;
     padding: 10px;
 }
+
+/*END OF GRID CARD BLOCK*/
+
 .search{
     text-align: center;
     background-color: white;
+    /*flex*/
     display: flex;
     flex-wrap: wrap;
-
 }
 .search1{
     padding: 35px 0;
@@ -155,57 +169,33 @@ header{
 button, button:active, button:focus{
     outline: none;
 }
-
-#searchHotel{
-    width: 568px;
-    height: 86px;
-    background-color: #766357;
-    border: none;
-    font-weight: 700;
-    margin: auto;
-}
 .map{
     background: url("img/map.png");
     width: auto;
     height: 470px;
 }
+#search-hotel{
+    width: 568px;
+    height: 86px;
+    margin: auto;
+    border: none;
+    font-weight: 700;
+    background-color: #766357;
+}
 
-footer{
-    height: 120px;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 125px;
-}
-.logo_flex{
-    display: flex;
-    align-items: center;
-}
-.logo_flex div {
-    padding: 0 5px;
-}
-.socialContainer{
-    background-color: #81b3d2;
-    margin: 3px;
-    width: 46px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.social{
-    display: flex;
-}
+/*GRID MODAL*/
+
 .modal{
+    /*main*/
+    display: none;
     width: 468px;
     height: 310px;
-    background-color: white;
     margin: auto;
-    box-shadow: 1px 1px 8px 1px gray;
     padding: 50px 50px;
-    display: none;
+    /*decoration*/
+    background-color: white;
+    box-shadow: 1px 1px 8px 1px gray;
+    /*grid*/
     grid-template-areas:
     "date1Text date1Input date1Input date1Input"
     "date2Text date2Input date2Input date2Input"
@@ -221,7 +211,6 @@ footer{
 }
 .date1Text{
     grid-area: date1Text;
-
 }
 .date1Input{
     grid-area: date1Input;
@@ -230,14 +219,18 @@ footer{
     background-color: #f2f2f2;
 }
 .date1Input input, .date2Input input {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f2f2f2;
-    padding: 0 15px;
+    /*main*/
     width: 100%;
     height: 100%;
+    padding: 0 15px;
+    /*decoration*/
+    background-color: #f2f2f2;
     border: none;
     color: #000000;
+    /*flex*/
+    display: flex;
+    justify-content: space-between;
+    /*text*/
     font-family: "PT Sans";
     font-size: 16px;
     font-weight: 700;
@@ -260,7 +253,6 @@ footer{
     grid-area: adult;
     display: flex;
     justify-content: flex-start;
-
 }
 .counter1{
     grid-area: counter1;
@@ -294,134 +286,52 @@ footer{
     color: #ffffff;
     text-decoration: none;
 }
-.findHotel{
+.find-hotel{
     height: 58px;
     background-color: #81b3d2;
     border: none;
     width: 467px;
 }
-.findHotel:focus{
+.find-hotel:focus{
     border: none;
 }
-.hamburger-menu{
-    display: none;
-}
-@media screen and (max-width: 800px){
-    body{
-        width: 100%;
-        padding: 0;
-    }
-    #searchHotel{
-        width: 310px;
-    }
-    .modal{
-        width: 290px;
-        height: 400px;
-        background-color: white;
-        margin: auto;
-        box-shadow: 1px 1px 8px 1px gray;
-        padding: 10px;
-        display: none;
-        grid-template-areas:
-        "date1Text dat1Text"
-        "date1Input date1Input"
-        "date2Text date2Text"
-        "date2Input date2Input"
-        "adult counter1"
-        "children counter2"
-        "find find";
-        grid-template-rows: 38px 38px 38px 38px 38px 38px 100px;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px 0;
-    }
-    .children{
-        justify-content: flex-start;
-    }
-    .information {
-        display: flex;
-        flex-direction: column;
-    }
-    .white-card, .grayCard{
-        padding: 10px 30px;
-    }
-    .counter1, .counter2{
-        justify-content: flex-end;
-    }
-    footer{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 20px;
-    }
-    footer div{
-        margin: 3px 0;
-    }
-}
-@media screen and (max-width: 500px) {
 
-    .header-container{
-        display: none;
-    }
-    .hamburger-menu{
-        display: flex;
-        height: 56px;
-    }
-    .mainImg{
-        margin: auto;
-        padding-right: 30px;
-    }
-    .menu img {
-        width: 48px;
-        height: 48px;
-    }
-    .showHide{
+/*END OF MODAL WINDOW*/
+/*FOOTER*/
 
-        width: 100%;
-        height: 30%;
-        position: absolute;
-        top: 55px;
-        left: 0;
-        background-color: white;
-        filter: blur(10%);
-        display: none;
-        flex-direction: column;
-        padding-top: 10px;
-    }
-    .showHide div{
-        padding: 10px 0;
-    }
-    .showHide a{
-        color: black;
-    }
-    .showHide a a:hover{
-        color: black;
-    }
-
-    body{
-        max-width: 100%;
-        width: 100%;
-        margin: 0 auto;
-    }
-    .logo_flex{
-        display: flex;
-        flex-direction: column;
-    }
-    .socialContainer{
-        height: 36px;
-        width: 36px;
-        border-radius: 5px;
-    }
-    #sedona img{
-        width: 90%
-    }
-    .img-block img{
-        width: 100%;
-    }
-    .intro-wrapper, .wrap{
-        padding: 0 15px;
-    }
+footer{
+    height: 120px;
+    padding: 0 125px;
+    background-color: white;
+    /*flex*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
+.logo_flex{
+    display: flex;
+    align-items: center;
+}
+.logo_flex div {
+    padding: 0 5px;
+}
+.social-container{
+    background-color: #81b3d2;
+    margin: 3px;
+    width: 46px;
+    height: 48px;
+    /*flex*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social{
+    display: flex;
+}
+
+/*END OF FOOTER*/
+/*FONTS*/
 
 .PT-sans-normal{
     color: #000000;
@@ -492,7 +402,130 @@ footer{
 .inTheLines:after{
     margin-right: -100%;
 }
-.animation{
-    filter: opacity(100%);
-    transition: all 0.5s;
+
+/*MEDIA MEDIUM*/
+
+@media screen and (max-width: 800px){
+    body{
+        width: 100%;
+        padding: 0;
+    }
+    #search-hotel{
+        width: 310px;
+    }
+    .modal{
+        /*main*/
+        display: none;
+        width: 290px;
+        height: 400px;
+        padding: 10px;
+        margin: auto;
+        /*decoration*/
+        background-color: white;
+        box-shadow: 1px 1px 8px 1px gray;
+        /*grid*/
+        grid-template-areas:
+        "date1Text dat1Text"
+        "date1Input date1Input"
+        "date2Text date2Text"
+        "date2Input date2Input"
+        "adult counter1"
+        "children counter2"
+        "find find";
+        grid-template-rows: 38px 38px 38px 38px 38px 38px 100px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 0;
+    }
+    .children{
+        justify-content: flex-start;
+    }
+    .information {
+        display: flex;
+        flex-direction: column;
+    }
+    .white-card, .gray-card{
+        padding: 10px 30px;
+    }
+    .counter1, .counter2{
+        justify-content: flex-end;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+    footer div{
+        margin: 3px 0;
+    }
+}
+
+/*MEDIA SMALL*/
+
+@media screen and (max-width: 500px) {
+
+    .header-container{
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+        height: 56px;
+    }
+    .main-img{
+        margin: auto;
+        padding-right: 30px;
+    }
+    .menu img {
+        width: 48px;
+        height: 48px;
+    }
+    .show-hide{
+        /*main*/
+        display: none;
+        width: 100%;
+        height: 30%;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        padding-top: 10px;
+        /*decoration*/
+        background-color: white;
+        filter: blur(10%);
+        /*flex*/
+        flex-direction: column;
+    }
+    .show-hide div{
+        padding: 10px 0;
+    }
+    .show-hide a{
+        color: black;
+    }
+    .show-hide a a:hover{
+        color: black;
+    }
+
+    body{
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logo-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .social-container{
+        height: 36px;
+        width: 36px;
+        border-radius: 5px;
+    }
+    #sedona img{
+        width: 90%
+    }
+    .img-block img{
+        width: 100%;
+    }
+    .intro-wrapper, .wrap{
+        padding: 0 15px;
+    }
 }

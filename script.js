@@ -1,8 +1,8 @@
 'use strict'
 
 const image = document.querySelector('.menu-image');
-const menu = document.querySelector('.showHide');
-const btnModal = document.querySelector('#searchHotel');
+const menu = document.querySelector('.show-hide');
+const btnModal = document.querySelector('#search-hotel');
 const modal = document.querySelector('.modal');
 const m1 = document.querySelector('.m1');
 const m2 = document.querySelector('.m2');
@@ -23,8 +23,8 @@ function showHideElem (trigger, element) {
             showHideElem(image, menu);
             trigger.style.transform = 'none';
             trigger.style.transition = 'all 0.3s';
-        })
-    })
+        });
+    });
 }
 function showHideModal (trigger, element) {
     trigger.addEventListener('click', () => {
