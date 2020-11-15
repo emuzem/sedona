@@ -14,10 +14,15 @@ const p2 = document.querySelector('.p2');
 function showHideElem (trigger, element) {
     trigger.addEventListener('click', () => {
         element.style.display = 'flex';
+        element.classList.add("animation");
+        trigger.style.transform = 'rotate(-90deg)';
+        trigger.style.transition = 'all 0.3s';
 
         trigger.addEventListener('click', () => {
             element.style.display = 'none';
             showHideElem(image, menu);
+            trigger.style.transform = 'none';
+            trigger.style.transition = 'all 0.3s';
         })
     })
 }

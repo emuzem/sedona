@@ -152,6 +152,9 @@ header{
 .wrap{
     margin: auto;
 }
+button, button:active, button:focus{
+    outline: none;
+}
 
 #searchHotel{
     width: 568px;
@@ -287,6 +290,10 @@ footer{
     grid-area: find;
     top: 30px;
 }
+.find a{
+    color: #ffffff;
+    text-decoration: none;
+}
 .findHotel{
     height: 58px;
     background-color: #81b3d2;
@@ -411,7 +418,11 @@ footer{
     .img-block img{
         width: 100%;
     }
+    .intro-wrapper, .wrap{
+        padding: 0 15px;
+    }
 }
+
 .PT-sans-normal{
     color: #000000;
     font-family: "PT Sans";
@@ -480,4 +491,8 @@ footer{
 }
 .inTheLines:after{
     margin-right: -100%;
+}
+.animation{
+    filter: opacity(100%);
+    transition: all 0.5s;
 }
